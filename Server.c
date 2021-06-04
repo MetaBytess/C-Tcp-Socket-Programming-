@@ -25,11 +25,11 @@ int main(){
 	listen(server_socket, 6);
 
 
-	int network_socket
-	network_socket = accept(server_socket, NULL, NULL);
+	int client_socket
+	client_socket = accept(server_socket, NULL, NULL);
 
 
-	send(network_socket, server_message, sizeof(server_message), 0);
+	send(client_socket, server_message, sizeof(server_message), 0);
 
 	close(server_socket);
 
