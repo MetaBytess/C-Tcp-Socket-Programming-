@@ -13,7 +13,7 @@ int main() {
 
     //specify the sockets address 
 	struct sockaddr_in server_addresss;
-	server_addresss.sin_faamily = AF_INET;
+	server_addresss.sin_family = AF_INET;
 	server_addresss.sin_port = htons(9966);
 	server_addresss.sin_addr.s_addr = INADDR_ANY;
 
@@ -32,7 +32,7 @@ int main() {
 	printf("The server sent the data: %s\n", server_response);
 
     //close the socket
-	close(sock);
+	close(socket);
 
 	return 0:
 
